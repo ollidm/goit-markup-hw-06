@@ -693,7 +693,7 @@ link {
   font-style: normal;
   font-weight: 700;
   line-height: 1.11;
-  custom_list letter-spacing: 0.72px;
+ letter-spacing: 0.72px;
 }
 
 .custom_ul {
