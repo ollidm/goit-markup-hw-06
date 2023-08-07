@@ -27,7 +27,7 @@ ol {
 img {
   display: block;
   max-width: 100%;
-
+  height: auto;
 }
 
 .visually_hidden {
@@ -44,10 +44,6 @@ img {
 }
 
 link {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-  padding: 24px 0;
   text-decoration: none;
 }
 
@@ -57,10 +53,15 @@ link {
 
 .container {
   width: 100%;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px; */
+  /* max-width: 428px; */
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+
+  /* outline: 2px solid red; */
 
 }
 
@@ -85,13 +86,14 @@ link {
   font-size: 18px;
   line-height: 1.17;
   color: #404bbf;
+  font-style: normal;
   font-weight: 800;
   letter-spacing: 0.03em;
-  text-decoration: none;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .loggo {
