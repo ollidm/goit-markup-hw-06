@@ -30,30 +30,29 @@
         position: relative;
     }
 
-    .header-menu-link.current {
-        color: #404BBF;
+    .header_men_link.current {
+        color: #404bbf;
     }
 
     .current::after {
-        content: '';
+        content: "";
         position: absolute;
-        bottom: -1px;
         left: 0;
-        width: 100%;
+        bottom: -1px;
         height: 4px;
+        width: 100%;
+        background-color: #404bbf;
         border-radius: 2px;
-        background-color: #404BBF;
     }
 
     .header-address-list {
         display: flex;
-        flex-direction: column;
-        /* gap: 40px; */
+        /* gap: 40vpx; */
         gap: 12px;
     }
 
-    .header-menu-link {
-        color: var(--navyblue);
+    .header_men_link {
+        color: var(--Dark);
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -64,17 +63,17 @@
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .header-menu-link:hover,
-    .header-menu-link:focus {
-        color: var(--ocean);
+    .header_men_link:focus,
+    .header_men_link:hover {
+        color: #404bbf;
     }
 
-    .header-address {
+    .adress_lnk {
         font-style: normal;
     }
 
-    .header-address-link {
-        color: var(--slate);
+    .header_social_link {
+        color: var(--Text);
         /* font-size: 16px;
             font-style: normal; */
         font-size: 12px;
@@ -86,29 +85,25 @@
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .header-address-link:hover,
-    .header-address-link:focus {
-        color: var(--ocean);
+    .header_social_link:hover,
+    .header_social_link:focus {
+        color: var(--Pressedstate);
     }
 
     .hero {
         padding: 112px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/people-office-tab.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url(../images/people-office-tab-2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
         }
     }
 
-    .hero-title {
+    .hero_title {
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
@@ -120,15 +115,15 @@
         padding: 72px 25px 24px 23px;
     }
 
-    .advantages-list {
+    .infomation_list {
         gap: 72px 24px;
     }
 
-    .advantages-item {
-        width: calc((100% - 24px) / 2);
+    .infomation_list_item {
+        width: calc((100% - 24px * 3) / 4);
     }
 
-    .team-list {
+    .our_list {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -137,33 +132,33 @@
         justify-content: center;
     }
 
-    .team-item {
+    .our_list_item {
         /* width: calc((100% - 24px) / 2); */
     }
 
-    .team-foto {
+    .our_description {
         margin: 0 auto;
     }
 
-    .customers-client-list {
+    .custom_ul {
         gap: 72px 24px;
         justify-content: center;
     }
 
-    .customers-client-item {
+    .custom_list {
         width: 168px;
         height: 88px;
     }
 
-    .customers-client-link {
+    .custom_a {
         width: 168px;
     }
 
-    .footer-text {
+    .logo_link_text {
         max-width: 264px;
     }
 
-    .footer-container {
+    .logos_div {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -172,31 +167,31 @@
         gap: 72px 24px;
     }
 
-    .footer-container-text {
+    .logos_grap {
         margin-right: 24px;
         align-items: start;
         margin-bottom: 0;
     }
 
-    .footer-socials {
+    .logos_social_media {
         align-items: start;
         margin-bottom: 0;
     }
 
-    .footer-form {
+    .subscr_form {
         flex-direction: row;
 
     }
 
-    .footer-input {
+    .subscr_email_form {
         width: 264px;
     }
 
-    .footer-social-form {
+    .subscr {
         align-items: start;
     }
 
-    .footer-label {
+    .subscr_lable {
         margin-right: 24px;
     }
 
@@ -210,14 +205,14 @@
         padding-right: 15px;
     }
 
-    .header-address-list {
+    .header_menu_list {
         display: flex;
         flex-direction: row;
         gap: 40px;
     }
 
-    .header-address-link {
-        color: var(--slate);
+    .header_social_link {
+        color: var(--Text);
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -228,22 +223,20 @@
 
     .hero {
         padding: 188px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/people-office.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url(../images/people-office-2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+
         }
     }
 
-    .hero-title {
+    .hero_title {
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
@@ -255,132 +248,131 @@
         padding: 72px 24px 24px;
     }
 
-    .advantages {
-        padding-top: 120px;
-        padding-bottom: 120px;
+    .infomation {
+        padding: 120px 0 120px;
     }
 
-    .advantages-list {
+    .infomation_list {
         gap: 24px;
     }
 
-    .advantages-item {
+    .infomation_list_item {
         width: calc((100% - 24px * 3) / 4);
     }
 
-    .advantages-block {
-        width: 264px;
-        height: 112px;
-        border-radius: 4px;
-        background-color: #F4F4FD;
-        margin-bottom: 8px;
+    .infomation_two_div {
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #f4f4fd;
+        width: 264px;
+        height: 112px;
+        border-radius: 4px;
+        margin-bottom: 8px;
     }
 
-    .advantages-subtitle {
+    .infomation_list_name {
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
     }
 
-    .advantages-item-text {
+    .infomation_list_text {
         font-weight: 400;
     }
 
-    .doing {
+    .doing_section {
         background-color: #FFF;
         padding-bottom: 120px;
         display: flex;
     }
 
-    .doing-title {
-        color: var(--navyblue);
-        text-align: center;
+    .doing_title {
+        color: var(--Dark);
         font-size: 36px;
-        font-weight: 700;
+        font-weight: 00;
         line-height: 1.11;
-        letter-spacing: 0.02em;
         text-transform: capitalize;
-        margin-bottom: 72px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin: 0 auto 72px;
     }
 
-    .doing-list {
+    .doing_list {
         display: flex;
         gap: 24px;
     }
 
-    .doing-item {
+    .doing_list_item {
         width: calc((100% - 48px) / 3);
     }
 
-    .team {
+    .our {
         padding-top: 120px;
         padding-bottom: 120px;
     }
 
-    .team-list {
+    .our_list {
         gap: 24px;
     }
 
-    .team-item {
+    .our_list_item {
         width: calc((100% - 72px) / 4);
     }
 
-    .customers {
+    .customer {
         padding-top: 120px;
         padding-bottom: 120px;
     }
 
-    .customers-client-list {
+    .custom_ul {
         gap: 24px;
         flex-direction: row;
         justify-content: center;
     }
 
-    .customers-client-item {
+    .custom_list {
         width: calc((100% - 120px) / 6);
     }
 
-    .customers-client-link {
+    .custom_a {
         height: 100%;
         width: 100%;
     }
 
-    .footer {
+    .logos {
         padding-top: 100px;
         padding-bottom: 100px;
     }
 
-    .footer-text {
+    .logo_link_text {
         max-width: 264px;
     }
 
-    .footer-container {
+    .logos_div {
         display: flex;
     }
 
-    .footer-container-text {
+    .logos_grap {
         margin-right: 120px;
     }
 
-    .footer-social-form {
+    .subscr {
         display: block;
         margin-left: 80px;
     }
 
-    .footer-form {
+    .subscr_form {
         justify-content: flex-end;
         gap: 24px;
     }
 
-    .footer-input {
+    .subscr_email_form {
         width: 264px;
     }
 
-    .footer-btn {
+    .subscr_button {
         min-width: 165px;
     }
 }

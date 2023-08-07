@@ -187,6 +187,7 @@ link {
 .header_social_link {
   color: var(--Text);
   font-size: 16px;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
@@ -492,7 +493,6 @@ link {
   font-size: 36px;
   font-weight: 00;
   line-height: 1.11;
-  letter-spacing: 0.72px;
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 0.02em;
@@ -692,7 +692,7 @@ link {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.11;
+  line-height: 1.11;custom_list
   letter-spacing: 0.72px;
 }
 
@@ -780,9 +780,9 @@ link {
   margin-right: 120px;
 }
 
-.logos-social-media {}
+.logos_social_media {}
 
-.logos-social {
+.logos_social {
   margin-bottom: 16px;
   color: #FFFFFF;
   font-size: 16px;
@@ -1108,4 +1108,9 @@ link {
   background-color: #404bbf;
 }
 
-.label_name
+.label_name {}
+
+.menu_open_btn {
+  border: none;
+  background-color: #fff;
+}
