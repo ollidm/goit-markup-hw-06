@@ -3,6 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+  font-style: normal;
 }
 
 p,
@@ -26,6 +27,7 @@ ol {
 img {
   display: block;
   max-width: 100%;
+
 }
 
 .visually_hidden {
@@ -47,6 +49,21 @@ link {
   border-top: none;
   padding: 24px 0;
   text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  max-width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+
 }
 
 /* Color */
@@ -136,9 +153,6 @@ link {
   gap: 40px;
 }
 
-.link {
-  text-decoration: none;
-}
 
 .header_menu {
   color: var(--Dark);
@@ -214,14 +228,7 @@ link {
 }
 
 /* Футер */
-.container {
-  width: 100%;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 
-}
 
 .logos {
   background-color: #2e2f42;
@@ -284,8 +291,8 @@ link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero_btn:hover,
+.hero_btn:focus {
   background-color: var(--Pressedstate);
 }
 
@@ -397,20 +404,30 @@ link {
   background-position: center;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob.jpg);
+  }
+}
+
 .hero_container {
   display: block;
   margin: 0 auto 48px;
 }
 
 .hero_title {
-  max-width: 496px;
+  /* max-width: 496px; */
   color: var(--White);
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
-  text-align: center;
-  margin: 0 auto 48px;
+  /* font-size: 56px; */
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  flex-direction: column;
+  margin: 0 auto;
+  /* margin: 0 auto 48px; */
+  max-width: 320px;
+  margin-bottom: 72px;
 
 }
 
@@ -1206,6 +1223,15 @@ link {
 .mob_menu_link:hover,
 .mob_menu_link:focus {
   color: #404bbf;
+}
+
+.mob_address_link_phone {
+  color: #4D5AE5;
+  /* font-size: 36px; */
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .mob_menu_link_study {
