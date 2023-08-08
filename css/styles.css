@@ -1,4 +1,14 @@
 /* Інструменти */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -215,9 +225,9 @@ link {
 /* Футер */
 .container {
   width: 100%;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  min-width: 320px;
+  max-width: 428px;
+  padding: 0 16px;
   margin: 0 auto;
 
 }
@@ -415,7 +425,7 @@ link {
 
 /* Секція 1 */
 .infomation {
-  padding: 120px 0 120px;
+  padding: 96px 0;
 }
 
 .infomation_container {
@@ -511,8 +521,7 @@ link {
 /* Секція 3 */
 .our {
   background-color: var(--Light);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px 0;
 }
 
 .our_container {
@@ -1120,18 +1129,16 @@ link {
   position: fixed;
   top: 0;
   left: 0;
-  background: #FFF;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  width: 100vw;
-  /* width: 100%; */
-  height: 100vh;
+  width: 428px;
+  /* height: 796px; */
   z-index: 2;
-  padding: 24px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  padding: 40px;
+  border-radius: 0px;
+
+  background-color: #FCFCFC;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu_open_btn {
@@ -1144,23 +1151,24 @@ link {
 }
 
 .menu_close_btn {
-  display: block;
-  margin-left: auto;
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 24px;
-  height: 24px;
+
+  min-width: 24px;
+  min-height: 24px;
   border-radius: 50%;
+  color: #2E2F42;
+  background-color: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #FFF;
+  align-items: center;
   padding: 0;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .menu_close_btn:hover,
@@ -1185,10 +1193,39 @@ link {
 }
 
 .mob_menu_link {
-  color:  #2E2F42;
+  color: #2E2F42;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+
+/* --Tablet screen >= 768-- */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .menu_open_btn {
+    display: none;
+  }
+}
+
+/* -- Desctop screen >= 1158-- */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+.our .infomation {
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .our .infomation {
+    padding: 120px 0;
+  }
 }
