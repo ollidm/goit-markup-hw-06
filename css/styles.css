@@ -490,7 +490,7 @@ link {
 .doing_title {
   color: var(--Dark);
   font-size: 36px;
-  font-weight: 00;
+  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
@@ -866,7 +866,8 @@ link {
 .subscr_email_form:hover,
 .subscr_email_form:focus {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-color: var(--button-color);
+  border-color: #404BBF;
+  ;
 }
 
 .subscr_email_form:placeholder-shown {
@@ -891,7 +892,7 @@ link {
   transition: 300ms scale 0;
 }
 
-.backdrop.is-hidden .modals {
+.backdrop.is-hidden .modal {
   transform: translatex(50%);
 
 }
@@ -907,7 +908,6 @@ link {
   min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
-
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
@@ -1108,4 +1108,45 @@ link {
   background-color: #404bbf;
 }
 
-.label_name
+.label_name {}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people_office_mob.jpg);
+  }
+}
+
+.menu_open_btn {
+  border: none;
+  background-color: #fff;
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+
+.menu_close_btn {
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-icon {}
