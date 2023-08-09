@@ -1,14 +1,4 @@
 /* Інструменти */
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -111,7 +101,7 @@ link {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  margin-bottom: 0 auto;
+
 
 }
 
@@ -225,9 +215,9 @@ link {
 /* Футер */
 .container {
   width: 100%;
-  min-width: 320px;
-  max-width: 428px;
-  padding: 0 16px;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 
 }
@@ -425,7 +415,7 @@ link {
 
 /* Секція 1 */
 .infomation {
-  padding: 96px 0;
+  padding: 120px 0 120px;
 }
 
 .infomation_container {
@@ -500,7 +490,7 @@ link {
 .doing_title {
   color: var(--Dark);
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 00;
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
@@ -521,7 +511,8 @@ link {
 /* Секція 3 */
 .our {
   background-color: var(--Light);
-  padding: 96px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .our_container {
@@ -875,8 +866,7 @@ link {
 .subscr_email_form:hover,
 .subscr_email_form:focus {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-color: #404BBF;
-  ;
+  border-color: var(--button-color);
 }
 
 .subscr_email_form:placeholder-shown {
@@ -901,6 +891,10 @@ link {
   transition: 300ms scale 0;
 }
 
+.backdrop.is-hidden .modals {
+  transform: translatex(50%);
+
+}
 
 .modal {
   padding: 72px 24px 24px 24px;
@@ -913,6 +907,7 @@ link {
   min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
+
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
@@ -1113,119 +1108,4 @@ link {
   background-color: #404bbf;
 }
 
-.label_name {}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/people_office_mob.jpg);
-  }
-}
-
-.mob_menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 428px;
-  /* height: 796px; */
-  z-index: 2;
-  padding: 40px;
-  border-radius: 0px;
-
-  background-color: #FCFCFC;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu_open_btn {
-  border: none;
-  background-color: #fff;
-}
-
-.mob-menu .is-open {
-  transform: translateX(0);
-}
-
-.menu_close_btn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-
-  min-width: 24px;
-  min-height: 24px;
-  border-radius: 50%;
-  color: #2E2F42;
-  background-color: #E7E9FC;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.menu_close_btn:hover,
-.menu_close_btn:focus {
-  background-color: #404BBF;
-  border: none;
-  fill: #ffffff;
-}
-
-.menu-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mob_menu_list {
-  .mob-menu-list {
-    margin-top: 56px;
-  }
-}
-
-.mob_menu_item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.mob_menu_link {
-  color: #2E2F42;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-
-/* --Tablet screen >= 768-- */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .menu_open_btn {
-    display: none;
-  }
-}
-
-/* -- Desctop screen >= 1158-- */
-@media only screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-}
-
-.our .infomation {
-  padding: 96px 0;
-}
-
-@media only screen and (min-width: 1158px) {
-  .our .infomation {
-    padding: 120px 0;
-  }
-}
+.label_name

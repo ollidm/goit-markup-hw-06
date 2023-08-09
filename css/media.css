@@ -1,0 +1,7 @@
+/* mobile */
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 426px;
+    }
+    
+}
