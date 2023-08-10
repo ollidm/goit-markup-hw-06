@@ -1108,4 +1108,88 @@ link {
   background-color: #404bbf;
 }
 
-.label_name
+.label_name {}
+
++@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+
+  }
+}
+
+@media screen and (min-width: 429px) {
+  .hero.section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob.jpg);
+
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero.section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob.jpg);
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .hero.section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero.section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob.jpg);
+
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .modal-body {
+    top: 30px;
+    transform: translate(-50%) scale(1);
+  }
+
+  .modal-body.is-hidden {
+    transform: translate(-50%) scale(0);
+  }
+}
+
+.close_btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: var(--c-accent);
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color var(--trn-main-transition-params),
+    border var(--trn-main-transition-params);
+}
+
+.close_btn:hover,
+.close_btn:focus {
+  border: none;
+  background-color: var(--c-effect);
+}
+
+.close_btn_icon {
+  fill: var(--c-decoration-dark);
+  transition: fill var(--trn-main-transition-params);
+}
+
+.close_btn:is(:hover, :focus) .close_btn_icon {
+  fill: var(--c-text-alt);
+}
