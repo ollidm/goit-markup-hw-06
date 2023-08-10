@@ -1,19 +1,21 @@
-@@ -3, 5+3, 389 @@ .container {
-    max-width: 426px;
-}
+/* mobile */
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 426px;
+    }
 
+    .burger_socials_list {
+        gap: 56px;
+    }
 
-.burger_socials_list {
-    gap: 56px;
-}
+    .burger_address_link .accent {
+        font-size: 36px;
+    }
 
-.burger_address_lin.accent {
-    font-size: 36px;
-}
+    .backdrop {
 
-.backdrop {
-    width: 392px;
-}
+        width: 392px;
+    }
 }
 
 /* table */
@@ -56,16 +58,16 @@
         /* transition: color var(--trn-main-transition-params); */
     }
 
-    .header_men_link.current {
+    .header_men_link .current {
         color: #404bbf;
     }
 
-    .header_men_link.current {
+    .header_men_link .current {
         color: #404bbf;
         position: relative;
     }
 
-    .header_men_link.current {
+    .header_men_link .current {
         background-color: #404bbf;
         border-radius: 2px;
         content: '';
@@ -136,22 +138,20 @@
         margin-bottom: 8px;
     }
 
-    .our>.container {
+    .our .container {
         max-width: 582px;
     }
 
     .our_list {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 64px;
         column-gap: 24px;
+        row-gap: 48px;
     }
 
     .our_list_item {
-        flex-basis: calc((100% - 24px) / 2);
+        flex-basis: calc((100% - 2 * 24px) / 4);
     }
 
-    .customer>.container {
+    .customer .container {
         max-width: 582px;
     }
 
@@ -184,21 +184,30 @@
         row-gap: 72px;
     }
 
+    .network {
+        display: flex;
+        gap: 24px;
+    }
+
+    .network_li {
+        flex-basis: calc((100% - 2 * 24px) / 3);
+    }
+
     .porto_item {
         flex-basis: calc((100% - 24px) / 2);
     }
 
-    .logos>.container {
+    .logos .container {
         max-width: 582px;
     }
 
-    .logos.container {
+    .logos .container {
         justify-content: flex-start;
         row-gap: 72px;
         column-gap: 24px;
     }
 
-    .logos .logo.logos-social {
+    .logos .logo .logos-social {
         text-align: start;
     }
 
@@ -219,7 +228,7 @@
     }
 
     .modal {
-        width: 408px;
+
         padding: 72px 24px 24px;
     }
 
@@ -231,13 +240,13 @@
 @media screen and (min-width: 1158px) {
 
     .container,
-    .team>.container,
-    .customer>.container,
-    .logos>.container {
+    .team .container,
+    .customer .container,
+    .logos .container {
         max-width: 1158px;
     }
 
-    .header .container {
+    .header.container {
         justify-content: start;
     }
 
@@ -260,7 +269,7 @@
         letter-spacing: 0.02em;
     }
 
-    .hero.s {
+    .hero {
         max-width: 1440px;
         padding: 188px 0;
     }
@@ -326,13 +335,14 @@
     }
 
     .our_list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 48px;
     }
 
     .our_list_item {
+        width: 264px;
         flex-basis: calc((100% - 3 * 24px) / 4);
+
     }
 
     .custom_ul {
@@ -382,9 +392,12 @@
 
     .subscr_email_form {
         border: 1px solid #ffffff;
+        flex-basis: auto;
+
     }
 
     .subscr_email_form::placeholder {
         color: currentColor;
+
     }
 }
