@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>goit-markup-hw</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -12,8 +13,9 @@
 
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
-  <title>goit-markup-hw</title>
+
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/media.css" />
 </head>
 
 <body>
@@ -47,7 +49,8 @@
               111-11-11</a>
           </li>
         </ul>
-      </address><button class="burger_menu_icon" data-menu-open>
+      </address>
+      <button class="burger_menu_icon" data-menu-open>
         <span class="burger_menu_line"></span>
       </button>
     </div>
@@ -113,8 +116,7 @@
             </a>
           </li>
         </ul>
-      </address>
-    </div>
+      </address></div>
     </div>
   </header>
 
@@ -325,38 +327,38 @@
     <section class="customer">
       <div class="container customer_div ">
         <h2 class="customer_title">Customers</h2>
-        <ul class="custom_ul">
-          <li class="custom_list list">
+        <ul class="custom_ul list">
+          <li class="custom_list">
             <a href="" class="custom_a link"><svg class="custom_svg" width="104" height="56">
                 <use href="./images/icons.svg#Customers_1"></use>
               </svg>
             </a>
           </li>
-          <li class="custom_list list">
+          <li class="custom_list">
             <a href="" class="custom_a link"><svg class="custom_svg" width="104" height="56">
                 <use href="./images/icons.svg#Customers_2"></use>
               </svg>
             </a>
           </li>
-          <li class="custom_list list">
+          <li class="custom_list">
             <a href="" class="custom_a link"><svg class="custom_svg" width="104" height="56">
                 <use href="./images/icons.svg#Customers_3"></use>
               </svg>
             </a>
           </li>
-          <li class="custom_list list">
+          <li class="custom_list">
             <a href="" class="custom_a link"><svg class="custom_svg" width="104" height="56">
                 <use href="./images/icons.svg#Customers_4"></use>
               </svg>
             </a>
           </li>
-          <li class="custom_list list">
+          <li class="custom_list">
             <a href="" class="custom_a link"><svg class="custom_svg" width="104" height="56">
                 <use href="./images/icons.svg#Customers_5"></use>
               </svg>
             </a>
           </li>
-          <li class="custom_list list">
+          <li class="custom_list">
             <a href="" class="custom_a link"><svg class="custom_svg" width="104" height="56">
                 <use href="./images/icons.svg#Customers_6"></use>
               </svg>
@@ -419,7 +421,7 @@
     </div>
   </footer>
   <div class="is-hidden backdrop" data-modal>
-    <div class="modal">
+    <div class="modal" data-modal-body>
       <button type="button" class="modal_btn" data-modal-close>
         <svg class="modal_icon" width="8" height="8">
           <use href="./images/icons.svg#close"></use>
@@ -475,7 +477,8 @@
   </div>
 
 
-  <script src="./modal.js"></script>
+  <script src="./js/burger.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
